@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
+use Spatie\LaravelImageOptimizer\Facades\ImageOptimizer;;
 
 class ItemController extends Controller
 {
@@ -84,6 +85,7 @@ class ItemController extends Controller
             if(is_file($v)){
                 $fn = time().'_'.($v->getClientOriginalName());
                 $fp = $v->storeAs('upload/id'.$id, $fn, 'local');
+                ImageOptimizer::optimize(Storage::path($fp));
                 $tbins[] = [
                     'type' => 0,
                     'item_id' => $id,
@@ -109,8 +111,10 @@ class ItemController extends Controller
 
     function destroy($id, Request $r) {
         if ($r->delimg==1) {
+            Storage::disk('local')->delete($r->imgurl);
             DB::table('images')->where('item_id', $id)->where('url', $r->imgurl)->delete();
         } else {
+            Storage::disk('local')->delete(DB::table('images')->where('item_id', $id)->pluck('url')->toArray());
             DB::table('item')->where('id', $id)->delete();
             DB::table('images')->where('item_id', $id)->delete();
         }
