@@ -85,7 +85,7 @@ class ItemController extends Controller
             if(is_file($v)){
                 $fn = time().'_'.($v->getClientOriginalName());
                 $fp = $v->storeAs('upload/id'.$id, $fn, 'local');
-                ImageOptimizer::optimize(Storage::path($fp));
+                // ImageOptimizer::optimize(Storage::path($fp));
                 $tbins[] = [
                     'type' => 0,
                     'item_id' => $id,
