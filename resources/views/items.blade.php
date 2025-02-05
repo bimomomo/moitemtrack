@@ -232,9 +232,9 @@
 
             function drawitemlistcard() {
                 var h = '';
-                var s = ($('#searchitemtextinput').val()).trim();
+                var s = ($('#searchitemtextinput').val()).trim().toUpperCase();
                 item_data.forEach((e, i) => {
-                    if(!s || s == '' || e.category.includes(s) || e.name.includes(s) || e.description.includes(s)){
+                    if(!s || s == '' || e.category.toUpperCase().includes(s) || e.name.toUpperCase().includes(s) || e.description.toUpperCase().includes(s)){
                         h+='<div class="rounded overflow-hidden shadow-lg flex flex-col">';
                         h+='    <div class="relative text-center" style="background-image:url(\'/recfil?rf='+e.image_main+'\');background-size:cover;background-position:center;">';
                         h+='        <a onclick="showDetailItem('+i+')">';
