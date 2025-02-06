@@ -168,6 +168,7 @@
             <span class="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300">cg</span>
             <span class="bg-amber-100 text-amber-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-amber-900 dark:text-amber-300">cg</span>
             <span class="bg-zinc-100 text-zinc-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-zinc-900 dark:text-zinc-300">cg</span>
+            <span class="bg-stone-100 text-stone-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-stone-900 dark:text-stone-300">cg</span>
             <span class="bg-slate-100 text-slate-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-slate-900 dark:text-slate-300">cg</span>
         </div>
         {{-- IMG COMPRESSOR START --}}
@@ -294,7 +295,7 @@
                     var tjsn = JSON.parse(itm.tag);
                     if (Array.isArray(tjsn)){
                         tjsn.forEach(t => {
-                            var c = 'gray';
+                            var c = 'stone';
                             if (t.toUpperCase() == 'MAINLINE') {c = 'blue';}
                             if (t.toUpperCase() == 'TH') {c = 'green';}
                             if (t.toUpperCase() == 'STH') {c = 'purple';}
