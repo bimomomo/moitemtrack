@@ -168,6 +168,7 @@
             <span class="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300">cg</span>
             <span class="bg-amber-100 text-amber-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-amber-900 dark:text-amber-300">cg</span>
             <span class="bg-zinc-100 text-zinc-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-zinc-900 dark:text-zinc-300">cg</span>
+            <span class="bg-slate-100 text-slate-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-slate-900 dark:text-slate-300">cg</span>
         </div>
         {{-- IMG COMPRESSOR START --}}
         <script src="https://cdn.jsdelivr.net/npm/@sitelintcode/optimize-image-on-the-client-side@0.0.44/dist/optimize-image-on-the-client-side.js"></script>
@@ -298,7 +299,7 @@
                             if (t.toUpperCase() == 'TH') {c = 'green';}
                             if (t.toUpperCase() == 'STH') {c = 'purple';}
                             if (t.toUpperCase() == 'PREMIUM') {c = 'amber';}
-                            if (t.toUpperCase() == 'SILVER') {c = 'zinc';}
+                            if (t.toUpperCase() == 'SILVER') {c = 'slate';}
                             tag += '<span class="bg-'+c+'-100 text-'+c+'-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-'+c+'-900 dark:text-'+c+'-300">'+t.toUpperCase()+'</span>';
                         });
                     }
