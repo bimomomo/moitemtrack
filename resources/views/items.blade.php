@@ -283,7 +283,7 @@
                 var tag = '';
                 if (itm.tag) {
                     var tjsn = JSON.parse(itm.tag);
-                    if (tjsn.isArray()){
+                    if (Array.isArray(tjsn)){
                         tjsn.forEach(t => {
                             var c = 'gray';
                             if (t.toUpperCase() == 'MAINLINE') {c = 'blue';}
