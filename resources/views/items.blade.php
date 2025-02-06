@@ -88,7 +88,7 @@
                         <div class="mb-6">
                         </div>
                         <div class="mb-6 text-right">
-                            <button onclick="resetval()" type="button" class="px-5 py-2.5 text-sm font-medium text-white inline-flex items-center bg-grey-700 hover:bg-grey-800 focus:ring-4 focus:outline-none focus:ring-grey-300 rounded-lg text-center dark:bg-grey-600 dark:hover:bg-grey-700 dark:focus:ring-grey-800">
+                            <button onclick="resetval()" type="button" class="px-5 py-2.5 text-sm font-medium text-white inline-flex items-center bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-lg text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M12 16c1.671 0 3-1.331 3-3s-1.329-3-3-3-3 1.331-3 3 1.329 3 3 3z"></path><path d="M20.817 11.186a8.94 8.94 0 0 0-1.355-3.219 9.053 9.053 0 0 0-2.43-2.43 8.95 8.95 0 0 0-3.219-1.355 9.028 9.028 0 0 0-1.838-.18V2L8 5l3.975 3V6.002c.484-.002.968.044 1.435.14a6.961 6.961 0 0 1 2.502 1.053 7.005 7.005 0 0 1 1.892 1.892A6.967 6.967 0 0 1 19 13a7.032 7.032 0 0 1-.55 2.725 7.11 7.11 0 0 1-.644 1.188 7.2 7.2 0 0 1-.858 1.039 7.028 7.028 0 0 1-3.536 1.907 7.13 7.13 0 0 1-2.822 0 6.961 6.961 0 0 1-2.503-1.054 7.002 7.002 0 0 1-1.89-1.89A6.996 6.996 0 0 1 5 13H3a9.02 9.02 0 0 0 1.539 5.034 9.096 9.096 0 0 0 2.428 2.428A8.95 8.95 0 0 0 12 22a9.09 9.09 0 0 0 1.814-.183 9.014 9.014 0 0 0 3.218-1.355 8.886 8.886 0 0 0 1.331-1.099 9.228 9.228 0 0 0 1.1-1.332A8.952 8.952 0 0 0 21 13a9.09 9.09 0 0 0-.183-1.814z"></path></svg>
                                 Reset
                             </button>
@@ -102,7 +102,7 @@
                 <div class="p-6 sticky top-0 text-center bg-white dark:bg-gray-800" style="z-index: 7777;">
                     <div class="relative">
                         <input type="text" name="q" id="searchitemtextinput" class="w-full border h-12 shadow p-4 rounded-full dark:text-gray-800 dark:border-gray-700 dark:bg-gray-200" placeholder="search" oninput="drawitemlistcard()">
-                        <svg class="text-grey-400 h-5 w-5 absolute top-3.5 right-3 fill-current dark:text-grey-300"
+                        <svg class="text-gray-400 h-5 w-5 absolute top-3.5 right-3 fill-current dark:text-gray-300"
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                             x="0px" y="0px" viewBox="0 0 56.966 56.966"
                             style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve">
@@ -120,7 +120,7 @@
             </div>
         </div>
         <div class="fixed right-9 bottom-9">
-            <button onclick="getitem()" type="button" class="text-white bg-grey-700 hover:bg-grey-800 focus:ring-4 focus:outline-none focus:ring-grey-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-grey-600 dark:hover:bg-grey-700 dark:focus:ring-grey-800">
+            <button onclick="getitem()" type="button" class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M12 16c1.671 0 3-1.331 3-3s-1.329-3-3-3-3 1.331-3 3 1.329 3 3 3z"></path><path d="M20.817 11.186a8.94 8.94 0 0 0-1.355-3.219 9.053 9.053 0 0 0-2.43-2.43 8.95 8.95 0 0 0-3.219-1.355 9.028 9.028 0 0 0-1.838-.18V2L8 5l3.975 3V6.002c.484-.002.968.044 1.435.14a6.961 6.961 0 0 1 2.502 1.053 7.005 7.005 0 0 1 1.892 1.892A6.967 6.967 0 0 1 19 13a7.032 7.032 0 0 1-.55 2.725 7.11 7.11 0 0 1-.644 1.188 7.2 7.2 0 0 1-.858 1.039 7.028 7.028 0 0 1-3.536 1.907 7.13 7.13 0 0 1-2.822 0 6.961 6.961 0 0 1-2.503-1.054 7.002 7.002 0 0 1-1.89-1.89A6.996 6.996 0 0 1 5 13H3a9.02 9.02 0 0 0 1.539 5.034 9.096 9.096 0 0 0 2.428 2.428A8.95 8.95 0 0 0 12 22a9.09 9.09 0 0 0 1.814-.183 9.014 9.014 0 0 0 3.218-1.355 8.886 8.886 0 0 0 1.331-1.099 9.228 9.228 0 0 0 1.1-1.332A8.952 8.952 0 0 0 21 13a9.09 9.09 0 0 0-.183-1.814z"></path></svg>
                 <span class="sr-only">REFRESH</span>
             </button>
@@ -282,7 +282,18 @@
 
                 var tag = '';
                 if (itm.tag) {
-                    tag = JSON.parse(itm.tag).join(', ');
+                    var tjsn = JSON.parse(itm.tag);
+                    if (tjsn.isArray()){
+                        tjsn.forEach(t => {
+                            var c = 'gray';
+                            if (t.toUpperCase() == 'MAINLINE') {c = 'blue';}
+                            if (t.toUpperCase() == 'TH') {c = 'green';}
+                            if (t.toUpperCase() == 'STH') {c = 'purple';}
+                            if (t.toUpperCase() == 'PREMIUM') {c = 'amber';}
+                            if (t.toUpperCase() == 'SILVER') {c = 'zinc';}
+                            tag += '<span class="bg-'+c+'-100 text-'+c+'-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-'+c+'-900 dark:text-'+c+'-300">'+t.toUpperCase()+'</span> ';
+                        });
+                    }
                 }
                 var prop = '';
                 if (itm.properties) {
