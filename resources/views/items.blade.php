@@ -291,7 +291,7 @@
                             if (t.toUpperCase() == 'STH') {c = 'purple';}
                             if (t.toUpperCase() == 'PREMIUM') {c = 'amber';}
                             if (t.toUpperCase() == 'SILVER') {c = 'zinc';}
-                            tag += '<span class="bg-'+c+'-100 text-'+c+'-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-'+c+'-900 dark:text-'+c+'-300">'+t.toUpperCase()+'</span> ';
+                            tag += '<span class="bg-'+c+'-100 text-'+c+'-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-'+c+'-900 dark:text-'+c+'-300">'+t.toUpperCase()+'</span>';
                         });
                     }
                 }
