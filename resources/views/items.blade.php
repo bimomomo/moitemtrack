@@ -307,16 +307,17 @@
                         });
                     }
                 }
-                var prop = '';
+                var prop = '<table>';
                 if (itm.properties) {
                     prp = JSON.parse(itm.properties);
                     for (const k in prp) {
                         if (Object.prototype.hasOwnProperty.call(prp, k)) {
                             const e = prp[k];
-                            prop += '<b>'+k+' &nbsp;&nbsp;&nbsp;&nbsp; : </b><span>'+e+'</span><br>'
+                            prop += '<tr><th>'+k+' </th><th>: </th><td>'+e+'</td></tr>';
                         }
                     }
                 }
+                prop += '</table>';
 
                 var img = '';
                 if (imglst) {
