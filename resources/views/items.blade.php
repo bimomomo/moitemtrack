@@ -134,23 +134,23 @@
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     <table style="w-full">
                         <tr>
-                            <th>Name</th><th> : </th>
+                            <th>Name</th><th><span class="pl-3 pr-2"> : </span></th>
                             <td id="tdItem-name"></td>
                         </tr>
                         <tr>
-                            <th>Category</th><th> : </th>
+                            <th>Category</th><th><span class="pl-3 pr-2"> : </span></th>
                             <td id="tdItem-category"></td>
                         </tr>
                         <tr>
-                            <th>Tag</th><th> : </th>
+                            <th>Tag</th><th><span class="pl-3 pr-2"> : </span></th>
                             <td id="tdItem-tag"></td>
                         </tr>
                         <tr>
-                            <th>Description</th><th> : </th>
+                            <th>Description</th><th><span class="pl-3 pr-2"> : </span></th>
                             <td id="tdItem-description"></td>
                         </tr>
                         <tr>
-                            <th>Properties</th><th> : </th>
+                            <th>Properties</th><th><span class="pl-3 pr-2"> : </span></th>
                             <td id="tdItem-properties"></td>
                         </tr>
                     </table>
@@ -313,7 +313,7 @@
                     for (const k in prp) {
                         if (Object.prototype.hasOwnProperty.call(prp, k)) {
                             const e = prp[k];
-                            prop += '<tr><th>'+k+' </th><th>: </th><td>'+e+'</td></tr>';
+                            prop += '<tr><th>'+k+' </th><th><span class="pl-3 pr-2"> : </span></th><td>'+e+'</td></tr>';
                         }
                     }
                 }
@@ -382,7 +382,7 @@
                         h += '        </span>';
                         h += '    </td>';
                         h += '    <th class="text-left">'+k+'</th>';
-                        h += '    <td class="text-center"><span class="pl-3 pr-2> : </span></td>';
+                        h += '    <td class="text-center"><span class="pl-3 pr-2"> : </span></td>';
                         h += '    <td class="text-left">'+e+'</td>';
                         h += '</tr>';
                     }
