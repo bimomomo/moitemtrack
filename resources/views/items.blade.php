@@ -313,7 +313,7 @@
                     for (const k in prp) {
                         if (Object.prototype.hasOwnProperty.call(prp, k)) {
                             const e = prp[k];
-                            prop += '<b>'+k+' : </b><span>'+e+'</span><br>'
+                            prop += '<b>'+k+' &nbsp;&nbsp;&nbsp;&nbsp; : </b><span>'+e+'</span><br>'
                         }
                     }
                 }
@@ -381,7 +381,7 @@
                         h += '        </span>';
                         h += '    </td>';
                         h += '    <th class="text-left">'+k+'</th>';
-                        h += '    <td class="text-center pl-3 pr-3"> : </td>';
+                        h += '    <td class="text-center"><span class="pl-3 pr-2> : </span></td>';
                         h += '    <td class="text-left">'+e+'</td>';
                         h += '</tr>';
                     }
