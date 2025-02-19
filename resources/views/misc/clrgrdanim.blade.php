@@ -15,25 +15,26 @@
 </head>
 <body>
     <script>
+        var d = false;
         $(document).ready(function () {
             newbg();
         });
         function newbg() {
-            var deg = 180;
-            var r1 = 255;
-            var g1 = 255;
-            var b1 = 255;
-            var r0 = 0;
-            var g0 = 0;
-            var b0 = 0;
+            var deg = 100;
+            var r1 = 125;
+            var g1 = 125;
+            var b1 = 125;
+            var r0 = 100;
+            var g0 = 100;
+            var b0 = 100;
             setInterval(() => {
-                deg = ranposneg(deg,0,360);
-                r1 = ranposneg(r1,0,360);
-                g1 = ranposneg(g1,0,360);
-                b1 = ranposneg(b1,0,360);
-                r0 = ranposneg(r0,0,360);
-                g0 = ranposneg(g0,0,360);
-                b0 = ranposneg(b0,0,360);
+                deg = ranposneg(deg,1,359);
+                r1 = ranposneg(r1,0,255);
+                g1 = ranposneg(g1,0,255);
+                b1 = ranposneg(b1,0,255);
+                r0 = ranposneg(r0,0,255);
+                g0 = ranposneg(g0,0,255);
+                b0 = ranposneg(b0,0,255);
 
                 var ligrad = 'linear-gradient(';
                 ligrad += deg+'deg, ';
@@ -45,7 +46,7 @@
             }, 100);
         }
         function ranposneg(d,n,x) {
-            var c = Math.random() < 0.5 ? -1 : 1;
+            var c = d + (Math.random() < 0.5 ? -5 : 5);
             if (c<n) {c=n;}
             if (c>x) {c=x;}
             return c;

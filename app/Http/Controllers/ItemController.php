@@ -44,16 +44,22 @@ class ItemController extends Controller
     function store(Request $r) {
         // return $r->all();
         $mime = ['png','jpeg','jpg','webp','gif','svg','bmp'];
-        $valid = Validator::make($r->all(), [
-            'images' => 'required|mimes:'.implode(',',$mime)
-        ]);
-        // if ($valid->fails()) {
-        //     return response()->json([
-        //         'success' => false,
-        //         'message' => 'File Failed',
-        //         'error' => $valid->errors(),
-        //     ], 400);
-        // }
+        
+        $tbv = [];
+        foreach ($r->all() as $k => $v) {
+            if(is_file($v)){
+                $tbv[$k] = 'required|mimes:'.implode(',',$mime);
+            }
+        }
+
+        $valid = Validator::make($r->all(), $tbv);
+        if ($valid->fails()) {
+            return response()->json([
+                'success' => false,
+                'message' => 'File Failed',
+                'error' => $valid->errors(),
+            ], 400);
+        }
         if ($r->id) {
             $itmid = $r->id;
             DB::table('item')->where('id', $r->id)->update([
