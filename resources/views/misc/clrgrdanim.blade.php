@@ -28,7 +28,7 @@
             var g0 = 100;
             var b0 = 100;
             setInterval(() => {
-                deg = ranposneg(deg,1,359);
+                deg = ranposneg(deg,10,300);
                 r1 = ranposneg(r1,0,255);
                 g1 = ranposneg(g1,0,255);
                 b1 = ranposneg(b1,0,255);
